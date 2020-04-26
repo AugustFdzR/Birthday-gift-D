@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>Realida Aumentada</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="/CSS/style3.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+    <div class="sidebar.hidden">
+        <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l3 w3-animate-left w3-black" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <h4 class="w3-bar-item"><b>Menú</b></h4>
+            <a class="w3-bar-item w3-button w3-hover-blue" href="/index.html">HOME</a>
+            <a class="w3-bar-item w3-button w3-hover-blue" href="/photos_carrusel.html">¿Quién cumple?</a>
+            <a class="w3-bar-item w3-button w3-hover-blue" href="/Augmeted_R.html">Regalo 1</a>
+            <a class="w3-bar-item w3-button w3-hover-blue" href="/Dino_AR.html">Regalo 2</a>
+            <a class="w3-bar-item w3-button w3-hover-blue" href="/song_video.html">Use audífonos!</a>
+        </nav>
+    </div>
+
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    <script 
+    src="https://rawgit.com/jeromeetienne/ar.js/master/aframe/build/aframe-ar.js">
+    </script>
+    <script>
+        THEREEx.ArToolkitContext.baseURL =
+        'https://rawgit.com/jeromeetienne/ar.js/master/three.js'
+    </script>
+    <body style='margin: 0px; overflow:hidden;'>
+        <a-scene embedded artoolkit='sourceType: webcam;'>
+            <a-sphere src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" 
+            radius="0.5" position="0 0.5 0" segments-height="53">
+                <a-animation attribute="scale"
+                    dur="1000"
+                    from= "1 1 1"
+                    to="2 2 2"
+                    direction='alternate-reverse'
+                    easing= "ease-in-out-circ"     
+                    repeat="indefinite"></a-animation>
+            </a-sphere>
+            <a-marker-camara-preset='kanji'></a-marker-camara-preset>
+        </a-scene>
+
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>¿Quién cumple?</title>
+
+  <link href="/CSS/style.css" rel="stylesheet" type="text/css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: auto;
+    height: auto;
+  }
+
+  body{
+    background-image: url("/images/Wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: scroll;
+    background-color:black;
+  }
+  </style>
+</head>
+
+<!-- Sidebar -->
+<div class="sidebar.hidden">
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l3 w3-animate-left w3-black" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h4 class="w3-bar-item"><b>Menú</b></h4>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="/index.html">HOME</a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="/photos_carrusel.html">¿Quién cumple?</a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="/Augmeted_R.html">Regalo 1</a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="/Dino_AR.html">Regalo 2</a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="/song_video.html">Use audífonos!</a>
+    </nav>
+</div>
+
+<body>
+
+<div class="img">
+<div class="container mt-3">
+
+<h2 style="font-size: 300%; color:rgb(255, 217, 0)">Diana Laura Velázquez Estrada :3</h2>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner" align="center">
+    <div class="carousel-item active">
+      <img src="/images/Diana_00.jpg" alt="Ella es." width="300" height="300" class="img-rounded">
+      <div class="carousel-caption">
+          <h3 style="color:rgb(6, 30, 93);">Ella es:</h3>
+          <p style="color:rgb(6, 30, 93);">Mejor que el café en invierno.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/images/Diana_01.jpg" alt="La más divertida" width="auto" height="auto" class="img-rounded">
+      <div class="carousel-caption">
+          <h3 style="color:rgb(255, 255, 255);">La más divertida.</h3>
+          <p style="color:rgb(255, 255, 255);">Su sonrisa es perfecta :3</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/images/Diana_02.jpeg" alt="Muy hermosa" width="auto" height="auto" class="img-rounded">
+      <div class="carousel-caption">
+          <h3 style="color:rgb(250, 225, 3);">¿Lo notas?</h3>
+          <p style="color:rgb(250, 225, 3);">¡Es muy hermosa e inteligente!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+        <img src="/images/Diana_03.jpg" alt="Sonriente y perfecta." width="100" height="100" class="img-rounded">
+        <div class="carousel-caption">
+            <h3 style="color:rgb(255, 255, 255);">Perfección</h3>
+            <p style="color:rgb(255, 255, 255);">No hay mejor definición.</p>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
